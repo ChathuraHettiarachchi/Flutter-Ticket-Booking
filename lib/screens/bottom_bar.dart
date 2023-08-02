@@ -1,6 +1,7 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_ticket_booking/screens/home_screen.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});
@@ -10,12 +11,12 @@ class BottomBar extends StatefulWidget {
 }
 
 class _BottomBarState extends State<BottomBar> {
-  int _selectedIndex = 3;
+  int _selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     const List<Widget> _widgetOptions = <Widget>[
-      Text('Home'),
+      HomeScreen(),
       Text('Search'),
       Text('Tickets'),
       Text('Profile'),
@@ -28,9 +29,6 @@ class _BottomBarState extends State<BottomBar> {
     }
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('My Tickets'),
-      ),
       body: Center(
         child: _widgetOptions[_selectedIndex],
       ),
