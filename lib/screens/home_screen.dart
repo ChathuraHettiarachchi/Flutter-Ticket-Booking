@@ -1,6 +1,7 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_ticket_booking/screens/ticket_item.dart';
 import 'package:flutter_ticket_booking/utils/app_styles.dart';
 import 'package:gap/gap.dart';
 
@@ -89,6 +90,19 @@ class HomeScreen extends StatelessWidget {
                     )
                   ],
                 )
+              ],
+            ),
+          ),
+          const Gap(15),
+          const SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            padding: EdgeInsets.only(left: 20),
+            child: Row(
+              children: [
+                TicketItem(),
+                TicketItem(),
+                TicketItem(),
+                TicketItem(),
               ],
             ),
           )
