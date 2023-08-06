@@ -100,10 +100,10 @@ class HomeScreen extends StatelessWidget {
             padding: EdgeInsets.only(left: 20),
             child: Row(
               children: [
-                TicketItem(),
-                TicketItem(),
-                TicketItem(),
-                TicketItem(),
+                TicketItem(rightMargin: 16),
+                TicketItem(rightMargin: 16),
+                TicketItem(rightMargin: 16),
+                TicketItem(rightMargin: 16),
               ],
             ),
           ),

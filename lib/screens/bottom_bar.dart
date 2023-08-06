@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ticket_booking/screens/home_screen.dart';
 import 'package:flutter_ticket_booking/screens/search_screen.dart';
+import 'package:flutter_ticket_booking/screens/tickets_screen.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});
@@ -19,7 +20,7 @@ class _BottomBarState extends State<BottomBar> {
     const List<Widget> _widgetOptions = <Widget>[
       HomeScreen(),
       SearchScreen(),
-      Text('Tickets'),
+      TicketScreen(),
       Text('Profile'),
     ];
 

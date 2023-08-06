@@ -6,7 +6,9 @@ import 'package:flutter_ticket_booking/widgets/tick_container.dart';
 import 'package:gap/gap.dart';
 
 class TicketItem extends StatelessWidget {
-  const TicketItem({super.key});
+  const TicketItem({super.key, required this.rightMargin});
+
+  final double rightMargin;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +17,7 @@ class TicketItem extends StatelessWidget {
       width: size.width * 0.90,
       height: 200,
       child: Container(
-        margin: const EdgeInsets.only(right: 16),
+        margin: EdgeInsets.only(right: rightMargin),
         child: Column(
           children: [
             /*
