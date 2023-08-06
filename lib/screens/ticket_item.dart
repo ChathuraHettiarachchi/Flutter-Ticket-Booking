@@ -230,21 +230,21 @@ class TicketItem extends StatelessWidget {
                         width: 100,
                         child: Text(
                           'Date',
-                          style: Styles.headLineStyle3
+                          style: Styles.headLineStyle4
                               .copyWith(color: Colors.white),
                         ),
                       ),
                       Text(
                         'Departure time',
                         style:
-                            Styles.headLineStyle3.copyWith(color: Colors.white),
+                            Styles.headLineStyle4.copyWith(color: Colors.white),
                       ),
                       SizedBox(
                         width: 100,
                         child: Text(
                           'Number',
                           textAlign: TextAlign.end,
-                          style: Styles.headLineStyle3
+                          style: Styles.headLineStyle4
                               .copyWith(color: Colors.white),
                         ),
                       )
